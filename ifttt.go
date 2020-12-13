@@ -23,7 +23,7 @@ type hookReq struct {
 }
 
 // NewIFTTT sets up a new IFTTT webhook object.
-func NewIFTTT(event string, key string) *ifttt {
+func NewIFTTT(event string, key string) RichSender {
 	return &ifttt{
 		event: event,
 		key:   key,
